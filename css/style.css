@@ -1,0 +1,50 @@
+.table-custom-header,
+.table-custom-header > th,
+.table-custom-header > td {
+  background-color: #915E71;
+  color: #FFFFFF;
+}
+
+.table-hover .table-custom-header:hover {
+  background-color: #f1b0b7;
+}
+
+.table-hover .table-custom-header:hover > td,
+.table-hover .table-custom-header:hover > th {
+  background-color: #f1b0b7;
+}
+
+.btn-outline-custom {
+  color: #631A35;
+  background-color: transparent;
+  background-image: none;
+  border-color: #631A35;
+  font-weight: bold;
+}
+
+.btn-outline-custom:hover {
+  color: #fff;
+  background-color: #631A35;
+  border-color: #631A35;
+}
+
+.btn-outline-custom:focus, .btn-outline-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-custom.disabled, .btn-outline-custom:disabled {
+  color: #631A35;
+  background-color: transparent;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active, .btn-outline-custom:not(:disabled):not(.disabled).active,
+.show > .btn-outline-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #631A35;
+  border-color: #631A35;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus, .btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}

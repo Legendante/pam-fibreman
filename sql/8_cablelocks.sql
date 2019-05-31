@@ -1,0 +1,36 @@
+CREATE TABLE cable_locks
+(
+id INT NOT NULL AUTO_INCREMENT,
+locknum VARCHAR(10),
+creation_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE cable_lock_log
+(
+id INT NOT NULL AUTO_INCREMENT,
+lockid INT NOT NULL,
+userid INT,
+company_id INT,
+creation_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+historyserial INT NOT NULL DEFAULT 0,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE lock_users
+(
+id INT NOT NULL AUTO_INCREMENT,
+company_id INT NOT NULL,
+firstname VARCHAR(100),
+surname VARCHAR(100),
+knownas VARCHAR(100),
+idnumber VARCHAR(50),
+birthday DATE,
+cellnumber VARCHAR(30),
+homenumber VARCHAR(30),
+email VARCHAR(100),
+dateregistered DATETIME DEFAULT CURRENT_TIMESTAMP,
+lastupdate DATETIME ON UPDATE CURRENT_TIMESTAMP,
+inactive INT DEFAULT 0,
+PRIMARY KEY(id)
+);
